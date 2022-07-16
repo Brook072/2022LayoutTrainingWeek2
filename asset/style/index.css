@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: sans-serif, "Roboto";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 56px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1, h2, p, a {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1.325;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 1.3125;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  font-weight: 500;
+}
+
+.font-color-white {
+  color: #FFF;
+}
+
+.font-color-black {
+  color: #000;
+}
+
+.text24, .text24-h {
+  font-size: 24px;
+}
+
+.text24-h {
+  line-height: 1.75;
+}
+
+.text20 {
+  font-size: 20px;
+}
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 308px;
+  padding-bottom: 308px;
+}
+
+.banner .container {
+  max-width: 304px;
+  padding-top: 0;
+}
+
+.banner p {
+  font-weight: bold;
+}
+
+.banner .text24-h {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.banner .text24 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 40px;
+  margin-left: 13px;
+  text-align: justify;
+}
+
+.social-group {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social-logo {
+  border-radius: 12px;
+}
+
+.social-logo:hover {
+  -webkit-box-shadow: 2px 2px #FFF;
+          box-shadow: 2px 2px #FFF;
+}
+
+.about .container {
+  max-width: 384px;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+}
+
+.about .text24-h.last {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 28px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000;
+}
+
+.name {
+  margin-bottom: 4px;
+}
+
+.birth-date {
+  margin-bottom: 8px;
+}
+
+.personal-pic {
+  margin-bottom: 20px;
+}
+
+.identity-group, .identity-item {
+  margin-bottom: 28px;
+}
+
+.identity-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 11px;
+  margin-right: 16px;
+}
+
+.my-brand {
+  background-color: #000;
+  padding-bottom: 160px;
+}
+
+.my-brand h2 {
+  margin-bottom: 12px;
+}
+
+.my-brand .text24-h {
+  margin-bottom: 32px;
+}
+
+.my-brand .text20 {
+  margin-bottom: 68px;
+}
+
+.brandpic-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brandpic-item:first-child {
+  margin-bottom: 40px;
+}
+
+.brandpic-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.other-works h2 {
+  margin-bottom: 16px;
+}
+
+.other-works .text20 {
+  margin-bottom: 56px;
+}
+
+.other-works-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.other-works-item img:first-child {
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: #000;
+  padding-bottom: 48px;
+}
+
+footer .container {
+  padding-top: 64px;
+}
+
+footer h2 {
+  margin-bottom: 16px;
+}
+
+.contact-item {
+  color: #FFF;
+  margin-bottom: 16px;
+}
+
+.contact-item:hover {
+  text-decoration: underline;
+  font-size: 28px;
+}
+/*# sourceMappingURL=index.css.map */

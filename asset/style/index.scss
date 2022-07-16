@@ -1,0 +1,239 @@
+// CSS reset
+@import "./CSSReset";
+
+img{
+    vertical-align: top;
+}
+
+a{
+    text-decoration: none;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+// General configure
+*{
+    font-family: sans-serif, "Roboto";
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 56px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, p, a{
+    font-style: italic;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 1.325;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 1.3125;
+    font-weight: 500;
+}
+
+p{
+    line-height: 1.5;
+}
+
+a{
+    font-weight: 500;
+}
+
+.font-color-white{
+    color: #FFF;
+}
+
+.font-color-black{
+    color: #000;
+}
+
+.text24, .text24-h{
+    font-size: 24px;
+}
+
+.text24-h{
+    line-height: 1.75;
+}
+
+.text20{
+    font-size: 20px;
+}
+
+// top container
+
+.banner{
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 308px;
+    padding-bottom: 308px;
+    .container{
+        max-width: 304px;
+        padding-top: 0;
+    }
+    p{
+        font-weight: bold;
+    }
+    .text24-h{
+        align-self: start;
+    }
+    .text24{
+        width: max-content;
+        margin-bottom: 40px;
+        margin-left: 13px;
+        text-align: justify;
+    }
+}
+
+.social-group{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.social-logo{
+    border-radius: 12px;
+    &:hover{
+        box-shadow: 2px 2px #FFF;
+    }
+}
+
+// about block
+.about{
+    .container{
+        max-width: 384px;
+    }
+    h2{
+        margin-bottom: 40px;
+    }
+    .text24-h.last{
+        width: max-content;
+        margin-bottom: 28px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #000;
+    }
+}
+
+.name{
+    margin-bottom: 4px;
+}
+.birth-date{
+    margin-bottom: 8px;
+}
+
+.personal-pic{
+    margin-bottom: 20px;
+}
+
+.identity-group ,.identity-item{
+    margin-bottom: 28px;
+}
+
+.identity-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot{
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    border-radius: 11px;
+    margin-right: 16px;
+}
+
+// my-brand block
+
+.my-brand{
+    background-color: #000;
+    padding-bottom: 160px;
+    h2{
+        margin-bottom: 12px;
+    }
+    .text24-h{
+        margin-bottom: 32px;
+    }
+    .text20{
+        margin-bottom: 68px;
+    }
+}
+
+.brandpic-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brandpic-item{
+    &:first-child{
+        margin-bottom: 40px;
+    }
+    &:last-child{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+// other works block
+
+.other-works{
+    h2{
+        margin-bottom: 16px;
+    }
+    .text20{
+        margin-bottom: 56px;
+    }
+}
+
+.other-works-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+.other-works-item{
+    img:first-child{
+        margin-bottom: 16px;
+    }
+}
+
+// contact block
+
+footer{
+    background-color: #000;
+    padding-bottom: 48px;
+    .container{
+        padding-top: 64px;
+    }
+    h2{
+        margin-bottom: 16px;
+    }
+}
+
+.contact-item{
+    color: #FFF;
+    margin-bottom: 16px;
+    &:hover{
+        text-decoration: underline;
+        font-size: 28px;
+    }
+}
