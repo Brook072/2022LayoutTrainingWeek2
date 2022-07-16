@@ -108,6 +108,7 @@ h2 {
 
 p {
   line-height: 1.5;
+  font-weight: bold;
 }
 
 a {
@@ -248,6 +249,10 @@ a {
   margin-bottom: 12px;
 }
 
+.my-brand p {
+  font-weight: 500;
+}
+
 .my-brand .text24-h {
   margin-bottom: 32px;
 }
@@ -283,6 +288,10 @@ a {
 
 .other-works h2 {
   margin-bottom: 16px;
+}
+
+.other-works p {
+  font-weight: 500;
 }
 
 .other-works .text20 {
