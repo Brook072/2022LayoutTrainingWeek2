@@ -65,10 +65,6 @@ a {
           box-sizing: border-box;
 }
 
-* {
-  font-family: sans-serif, "Roboto";
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -90,6 +86,7 @@ a {
 }
 
 h1, h2, p, a {
+  font-family: "Roboto", sans-serif;
   font-style: italic;
 }
 
@@ -139,13 +136,16 @@ a {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 308px;
-  padding-bottom: 308px;
+  height: 100vh;
 }
 
 .banner .container {
   max-width: 304px;
   padding-top: 0;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner p {
@@ -199,8 +199,17 @@ a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin-bottom: 28px;
-  padding-bottom: 23px;
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.about .text24-h.last::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -24px;
+  left: 28px;
+  width: 384px;
   border-bottom: 1px solid #000;
 }
 
@@ -232,7 +241,18 @@ a {
           justify-content: center;
 }
 
-.dot {
+.identity-item .text24 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.identity-item .text24::before {
+  content: "";
+  display: block;
   width: 22px;
   height: 22px;
   background-color: #891818;
@@ -333,6 +353,7 @@ footer h2 {
 
 .contact-item:hover {
   text-decoration: underline;
-  font-size: 28px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=index.css.map */
