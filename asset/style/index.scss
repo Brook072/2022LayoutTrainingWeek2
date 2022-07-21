@@ -1,6 +1,10 @@
 // CSS reset
 @import "./CSSReset";
 
+html, body, html * {
+    font-family: 'Roboto', sans-serif;
+  }
+
 img{
     vertical-align: top;
 }
@@ -27,7 +31,7 @@ a{
 }
 
 h1, h2, p, a{
-    font-family: "Roboto", sans-serif;
+    // font-family: "Roboto", sans-serif;
     font-style: italic;
 }
 
@@ -79,7 +83,7 @@ a{
     background-image: url("../images/banner.png");
     background-repeat: no-repeat;
     background-position: top;
-    // background-size: cover;
+    max-height: 960px;
     height: 100vh;
     .container{
         max-width: 304px;
